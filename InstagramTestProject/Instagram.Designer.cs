@@ -1,6 +1,6 @@
 ﻿namespace InstagramTestProject
 {
-    partial class InstagramTest
+    partial class Instagram
     {
         /// <summary>
         /// Required designer variable.
@@ -35,10 +35,10 @@
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.lblKullaniciAdi = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblResimSec = new System.Windows.Forms.Label();
-            this.btnResimSec = new System.Windows.Forms.Button();
-            this.lblGonderiIsim = new System.Windows.Forms.Label();
             this.btnPaylas = new System.Windows.Forms.Button();
+            this.lblGonderiIsim = new System.Windows.Forms.Label();
+            this.btnResimSec = new System.Windows.Forms.Button();
+            this.lblResimSec = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(264, 134);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Giriş";
             // 
@@ -74,7 +74,7 @@
             this.txtSifre.PasswordChar = '*';
             this.txtSifre.Size = new System.Drawing.Size(117, 22);
             this.txtSifre.TabIndex = 3;
-            this.txtSifre.Text = "Bisiktirgit12";
+            this.txtSifre.Text = "Eyisörahcegi";
             // 
             // lblSifre
             // 
@@ -91,7 +91,7 @@
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(117, 22);
             this.txtKullaniciAdi.TabIndex = 1;
-            this.txtKullaniciAdi.Text = "emreoren1";
+            this.txtKullaniciAdi.Text = "beykentymk";
             // 
             // lblKullaniciAdi
             // 
@@ -108,40 +108,12 @@
             this.groupBox2.Controls.Add(this.lblGonderiIsim);
             this.groupBox2.Controls.Add(this.btnResimSec);
             this.groupBox2.Controls.Add(this.lblResimSec);
-            this.groupBox2.Location = new System.Drawing.Point(12, 152);
+            this.groupBox2.Location = new System.Drawing.Point(12, 167);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(264, 100);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gönderi Paylaş";
-            // 
-            // lblResimSec
-            // 
-            this.lblResimSec.AutoSize = true;
-            this.lblResimSec.Location = new System.Drawing.Point(3, 24);
-            this.lblResimSec.Name = "lblResimSec";
-            this.lblResimSec.Size = new System.Drawing.Size(83, 17);
-            this.lblResimSec.TabIndex = 0;
-            this.lblResimSec.Text = "Resim Seç: ";
-            // 
-            // btnResimSec
-            // 
-            this.btnResimSec.Location = new System.Drawing.Point(92, 21);
-            this.btnResimSec.Name = "btnResimSec";
-            this.btnResimSec.Size = new System.Drawing.Size(129, 23);
-            this.btnResimSec.TabIndex = 1;
-            this.btnResimSec.Text = "Gönderi Seç";
-            this.btnResimSec.UseVisualStyleBackColor = true;
-            this.btnResimSec.Click += new System.EventHandler(this.BtnResimSec_Click);
-            // 
-            // lblGonderiIsim
-            // 
-            this.lblGonderiIsim.AutoSize = true;
-            this.lblGonderiIsim.Location = new System.Drawing.Point(6, 80);
-            this.lblGonderiIsim.Name = "lblGonderiIsim";
-            this.lblGonderiIsim.Size = new System.Drawing.Size(20, 17);
-            this.lblGonderiIsim.TabIndex = 2;
-            this.lblGonderiIsim.Text = "...";
             // 
             // btnPaylas
             // 
@@ -153,15 +125,43 @@
             this.btnPaylas.UseVisualStyleBackColor = true;
             this.btnPaylas.Click += new System.EventHandler(this.BtnPaylas_Click);
             // 
-            // InstagramTest
+            // lblGonderiIsim
+            // 
+            this.lblGonderiIsim.AutoSize = true;
+            this.lblGonderiIsim.Location = new System.Drawing.Point(6, 80);
+            this.lblGonderiIsim.Name = "lblGonderiIsim";
+            this.lblGonderiIsim.Size = new System.Drawing.Size(20, 17);
+            this.lblGonderiIsim.TabIndex = 2;
+            this.lblGonderiIsim.Text = "...";
+            // 
+            // btnResimSec
+            // 
+            this.btnResimSec.Location = new System.Drawing.Point(92, 21);
+            this.btnResimSec.Name = "btnResimSec";
+            this.btnResimSec.Size = new System.Drawing.Size(129, 23);
+            this.btnResimSec.TabIndex = 1;
+            this.btnResimSec.Text = "Gönderi Seç";
+            this.btnResimSec.UseVisualStyleBackColor = true;
+            this.btnResimSec.Click += new System.EventHandler(this.BtnResimSec_Click);
+            // 
+            // lblResimSec
+            // 
+            this.lblResimSec.AutoSize = true;
+            this.lblResimSec.Location = new System.Drawing.Point(3, 24);
+            this.lblResimSec.Name = "lblResimSec";
+            this.lblResimSec.Size = new System.Drawing.Size(83, 17);
+            this.lblResimSec.TabIndex = 0;
+            this.lblResimSec.Text = "Resim Seç: ";
+            // 
+            // Instagram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(395, 343);
             this.Controls.Add(this.groupBox1);
-            this.Name = "InstagramTest";
-            this.Text = "InstagramTest";
+            this.Controls.Add(this.groupBox2);
+            this.Name = "Instagram";
+            this.Text = "Instagram";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

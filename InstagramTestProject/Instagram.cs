@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,17 +10,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace InstagramTestProject
 {
-    public partial class InstagramTest : Form
+    public partial class Instagram : Form
     {
-        public InstagramTest()
+        public Instagram()
         {
             InitializeComponent();
         }
+
         IWebDriver driver;
         public async void DriverStart(string proxy)
         {
@@ -95,13 +96,10 @@ namespace InstagramTestProject
             try
             {
                 driver.FindElement(By.CssSelector("#react-root > section > nav.NXc7H.f11OC > div > div > div.KGiwt > div > div > div.q02Nz._0TPg > span")).Click();
-                IWebElement iptal3 = driver.FindElement(By.CssSelector("body > div.RnEpo.xpORG._9Mt7n > div > div.YkJYY > div > div:nth-child(5) > button"));
-                iptal3.Click();
                 Thread.Sleep(1500);
                 SendKeys.Send(gonderi);
                 Thread.Sleep(1500);
-                SendKeys.Send("(ENTER)");
-                //driver.FindElement(By.Id("Value")).SendKeys(OpenQA.Selenium.Keys.Return);
+                SendKeys.Send("{ENTER}");
                 Thread.Sleep(1000);
                 driver.FindElement(By.CssSelector("#react-root > section > div.Scmby > header > div > div.mXkkY.KDuQp > button")).Click();
                 Thread.Sleep(1000);

@@ -16,7 +16,7 @@ namespace InstagramTestProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InstagramTest());
+            Application.Run(new Instagram());
         }
     }
 }

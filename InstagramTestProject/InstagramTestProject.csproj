@@ -57,16 +57,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="InstagramTest.cs">
+    <Compile Include="Instagram.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InstagramTest.Designer.cs">
-      <DependentUpon>InstagramTest.cs</DependentUpon>
+    <Compile Include="Instagram.Designer.cs">
+      <DependentUpon>Instagram.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="InstagramTest.resx">
-      <DependentUpon>InstagramTest.cs</DependentUpon>
+    <EmbeddedResource Include="Instagram.resx">
+      <DependentUpon>Instagram.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
